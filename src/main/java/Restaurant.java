@@ -1,4 +1,3 @@
-
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.ArrayList;
@@ -55,6 +54,15 @@ public class Restaurant {
 
         menu.remove(itemToBeRemoved);
     }
+
+    public int getTotalCost(List<String> selectedItems) {
+        int totalcost =0 ;
+        for (String itemname : selectedItems ) {
+            totalcost = totalcost+findItemByName(itemname).getPrice();
+        }
+        return totalcost;
+    }
+
     public void displayDetails(){
         System.out.println("Restaurant:"+ name + "\n"
                 +"Location:"+ location + "\n"

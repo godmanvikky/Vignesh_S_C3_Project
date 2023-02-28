@@ -84,6 +84,7 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    //Test case passed
     @Test
     public void select_item_from_list_should_return_order_cost(){
         int totalCost;
